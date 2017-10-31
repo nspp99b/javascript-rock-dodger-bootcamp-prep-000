@@ -82,7 +82,7 @@ function createRock(x) {
     if (checkCollision(rock)) {
       endGame();
     }
-    if (top = 400) {
+    if (top === 400) {
       rock.remove()
     }
     else {
