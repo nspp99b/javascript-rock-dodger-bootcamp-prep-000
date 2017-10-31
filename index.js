@@ -144,7 +144,7 @@ function moveDodger(e) {
     e.stopPropagation();
     moveDodgerRight()
   }
-  
+
 
   // implement me!
   /**
