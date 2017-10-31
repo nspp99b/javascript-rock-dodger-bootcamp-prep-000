@@ -134,9 +134,7 @@ function moveDodger(e) {
   if (e.which === 39) {
     moveDodgerRight()
   }
-  e.preventDefault();
-  e.stopPropagation();
-  
+
   // implement me!
   /**
    * This function should call `moveDodgerLeft()`
