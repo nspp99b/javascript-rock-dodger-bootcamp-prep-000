@@ -83,8 +83,8 @@ function createRock(x) {
       endGame();
     }
     if (top = 400) {
-      rock.remove()      
-    } 
+      rock.remove()
+    }
     else {
       window.requestAnimationFrame(moveRock)
     }
@@ -139,6 +139,8 @@ function moveDodger(e) {
 }
 
 function moveDodgerLeft() {
+  var left = positionToInteger(DODGER.style.left);
+  
   // implement me!
   /**
    * This function should move DODGER to the left
