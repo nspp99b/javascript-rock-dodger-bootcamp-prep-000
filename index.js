@@ -70,7 +70,7 @@ function createRock(x) {
    * it to GAME and move it downwards.
    */
 
-  GAME.appendChild(rock)
+  GAME.appendChild(`${rock}`)
 
 
   /**
