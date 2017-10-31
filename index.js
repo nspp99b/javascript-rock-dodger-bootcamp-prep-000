@@ -179,10 +179,12 @@ function moveDodgerLeft() {
 function moveDodgerRight() {
   var right = positionToInteger(DODGER.style.left);
   function stepRight() {
-    DODGER.style.left = `${right += 4}px`
-
     if (right < 360) {
-      window.requestAnimationFrame(stepRight)
+    DODGER.style.left = `${right += 4}px`;
+    window.requestAnimationFrame(stepRight);
+    }
+    else {
+      return
     }
   }
   window.requestAnimationFrame(stepRight)
