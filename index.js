@@ -128,6 +128,15 @@ function endGame() {
 }
 
 function moveDodger(e) {
+  if (e.which === 37) {
+    moveDodgerLeft()
+  }
+  if (e.which === 39) {
+    moveDodgerRight()
+  }
+  e.preventDefault();
+  e.stopPropagation();
+  
   // implement me!
   /**
    * This function should call `moveDodgerLeft()`
@@ -158,11 +167,11 @@ function moveDodgerLeft() {
 }
 
 function moveDodgerRight() {
-  var left = positionToInteger(DODGER.style.left);
+  var right = positionToInteger(DODGER.style.left);
   function stepRight() {
-    DODGER.style.left = `${left += 4}px`
+    DODGER.style.left = `${right += 4}px`
 
-    if (left < 360) {
+    if (right < 360) {
       window.requestAnimationFrame(stepRight)
     }
   }
